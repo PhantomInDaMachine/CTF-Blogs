@@ -2,100 +2,100 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on </title>
-    <link>//localhost:1313/tags/</link>
+    <link>https://phantomindamachine.github.io/CTF-Blogs/tags/</link>
     <description>Recent content in Tags on </description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://phantomindamachine.github.io/CTF-Blogs/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bash</title>
-      <link>//localhost:1313/tags/bash/</link>
+      <link>https://phantomindamachine.github.io/CTF-Blogs/tags/bash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/bash/</guid>
+      <guid>https://phantomindamachine.github.io/CTF-Blogs/tags/bash/</guid>
       <description></description>
     </item>
     <item>
       <title>Burp_suite</title>
-      <link>//localhost:1313/tags/burp_suite/</link>
+      <link>https://phantomindamachine.github.io/CTF-Blogs/tags/burp_suite/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/burp_suite/</guid>
+      <guid>https://phantomindamachine.github.io/CTF-Blogs/tags/burp_suite/</guid>
       <description></description>
     </item>
     <item>
       <title>Curl</title>
-      <link>//localhost:1313/tags/curl/</link>
+      <link>https://phantomindamachine.github.io/CTF-Blogs/tags/curl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/curl/</guid>
+      <guid>https://phantomindamachine.github.io/CTF-Blogs/tags/curl/</guid>
       <description></description>
     </item>
     <item>
       <title>FFuF</title>
-      <link>//localhost:1313/tags/ffuf/</link>
+      <link>https://phantomindamachine.github.io/CTF-Blogs/tags/ffuf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/ffuf/</guid>
+      <guid>https://phantomindamachine.github.io/CTF-Blogs/tags/ffuf/</guid>
       <description></description>
     </item>
     <item>
       <title>Json_web_token</title>
-      <link>//localhost:1313/tags/json_web_token/</link>
+      <link>https://phantomindamachine.github.io/CTF-Blogs/tags/json_web_token/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/json_web_token/</guid>
+      <guid>https://phantomindamachine.github.io/CTF-Blogs/tags/json_web_token/</guid>
       <description></description>
     </item>
     <item>
       <title>MFA</title>
-      <link>//localhost:1313/tags/mfa/</link>
+      <link>https://phantomindamachine.github.io/CTF-Blogs/tags/mfa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/mfa/</guid>
+      <guid>https://phantomindamachine.github.io/CTF-Blogs/tags/mfa/</guid>
       <description></description>
     </item>
     <item>
       <title>Netcat</title>
-      <link>//localhost:1313/tags/netcat/</link>
+      <link>https://phantomindamachine.github.io/CTF-Blogs/tags/netcat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/netcat/</guid>
+      <guid>https://phantomindamachine.github.io/CTF-Blogs/tags/netcat/</guid>
       <description></description>
     </item>
     <item>
       <title>Nmap</title>
-      <link>//localhost:1313/tags/nmap/</link>
+      <link>https://phantomindamachine.github.io/CTF-Blogs/tags/nmap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/nmap/</guid>
+      <guid>https://phantomindamachine.github.io/CTF-Blogs/tags/nmap/</guid>
       <description></description>
     </item>
     <item>
       <title>OAuth</title>
-      <link>//localhost:1313/tags/oauth/</link>
+      <link>https://phantomindamachine.github.io/CTF-Blogs/tags/oauth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/oauth/</guid>
+      <guid>https://phantomindamachine.github.io/CTF-Blogs/tags/oauth/</guid>
       <description></description>
     </item>
     <item>
       <title>Pentesting</title>
-      <link>//localhost:1313/tags/pentesting/</link>
+      <link>https://phantomindamachine.github.io/CTF-Blogs/tags/pentesting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/pentesting/</guid>
+      <guid>https://phantomindamachine.github.io/CTF-Blogs/tags/pentesting/</guid>
       <description></description>
     </item>
     <item>
       <title>THM</title>
-      <link>//localhost:1313/tags/thm/</link>
+      <link>https://phantomindamachine.github.io/CTF-Blogs/tags/thm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/thm/</guid>
+      <guid>https://phantomindamachine.github.io/CTF-Blogs/tags/thm/</guid>
       <description></description>
     </item>
     <item>
       <title>Wget</title>
-      <link>//localhost:1313/tags/wget/</link>
+      <link>https://phantomindamachine.github.io/CTF-Blogs/tags/wget/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/wget/</guid>
+      <guid>https://phantomindamachine.github.io/CTF-Blogs/tags/wget/</guid>
       <description></description>
     </item>
     <item>
       <title>Writeup</title>
-      <link>//localhost:1313/tags/writeup/</link>
+      <link>https://phantomindamachine.github.io/CTF-Blogs/tags/writeup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/writeup/</guid>
+      <guid>https://phantomindamachine.github.io/CTF-Blogs/tags/writeup/</guid>
       <description></description>
     </item>
   </channel>

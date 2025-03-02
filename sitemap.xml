@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/</loc>
+    <loc>https://phantomindamachine.github.io/CTF-Blogs/</loc>
   </url><url>
-    <loc>//localhost:1313/try-hack-me/medium/hammer/</loc>
+    <loc>https://phantomindamachine.github.io/CTF-Blogs/try-hack-me/medium/hammer/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/bash/</loc>
+    <loc>https://phantomindamachine.github.io/CTF-Blogs/tags/bash/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/burp_suite/</loc>
+    <loc>https://phantomindamachine.github.io/CTF-Blogs/tags/burp_suite/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/curl/</loc>
+    <loc>https://phantomindamachine.github.io/CTF-Blogs/tags/curl/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/ffuf/</loc>
+    <loc>https://phantomindamachine.github.io/CTF-Blogs/tags/ffuf/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/json_web_token/</loc>
+    <loc>https://phantomindamachine.github.io/CTF-Blogs/tags/json_web_token/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/mfa/</loc>
+    <loc>https://phantomindamachine.github.io/CTF-Blogs/tags/mfa/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/netcat/</loc>
+    <loc>https://phantomindamachine.github.io/CTF-Blogs/tags/netcat/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/nmap/</loc>
+    <loc>https://phantomindamachine.github.io/CTF-Blogs/tags/nmap/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/oauth/</loc>
+    <loc>https://phantomindamachine.github.io/CTF-Blogs/tags/oauth/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/pentesting/</loc>
+    <loc>https://phantomindamachine.github.io/CTF-Blogs/tags/pentesting/</loc>
   </url><url>
-    <loc>//localhost:1313/series/</loc>
+    <loc>https://phantomindamachine.github.io/CTF-Blogs/series/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>https://phantomindamachine.github.io/CTF-Blogs/tags/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/thm/</loc>
+    <loc>https://phantomindamachine.github.io/CTF-Blogs/tags/thm/</loc>
   </url><url>
-    <loc>//localhost:1313/try-hack-me/</loc>
+    <loc>https://phantomindamachine.github.io/CTF-Blogs/try-hack-me/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/wget/</loc>
+    <loc>https://phantomindamachine.github.io/CTF-Blogs/tags/wget/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/writeup/</loc>
+    <loc>https://phantomindamachine.github.io/CTF-Blogs/tags/writeup/</loc>
   </url>
 </urlset>
