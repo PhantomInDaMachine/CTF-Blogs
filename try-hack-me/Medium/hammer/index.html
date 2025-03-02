@@ -473,7 +473,7 @@ Lets start with <code>nmap</code>.</p>
 <li><code>-o</code> outputs the standard out to a file</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap --top-ports <span style="color:#ae81ff">20</span> hammer.thm -o nMap/hammer_top20_ports.txt
-</span></span></code></pre></div><p><img src="/images/Hammer-1.png" alt="Image"></p>
+</span></span></code></pre></div><p><img src="https://phantomindamachine.github.io/CTF-Blogs/images/Hammer-1.png" alt="Image"></p>
 <p>Port 22 is open but no web-server.</p>
 <h3 id="scan-a-larger-range">Scan a larger range.</h3>
 <ul>
@@ -483,7 +483,7 @@ Lets start with <code>nmap</code>.</p>
 <li><code>-oN</code> to output scan in normal</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -sV -O -p 0-2000 hammer.thm -oN nMap/hammer_p0-2000_sV_O.txt
-</span></span></code></pre></div><p><img src="phantomindamachine.github.io/CTF-Blogs/images/Hammer-2.png" alt="Image"></p>
+</span></span></code></pre></div><p><img src="https://phantomindamachine.github.io/CTF-Blogs/images/Hammer-2.png" alt="Image"></p>
 <p>Now we get an Apache server running on port 1337.</p>
 <h3 id="rescan">Rescan</h3>
 <p>Going a bit deeper on our 2 open ports</p>
