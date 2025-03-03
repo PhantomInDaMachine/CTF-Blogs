@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on </title>
-    <link>http://localhost:1313/CTF-Blogs/tags/</link>
+    <link>https://phantomindamachine.github.io/CTF-Blogs/tags/</link>
     <description>Recent content in Tags on </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 03 Mar 2025 17:31:27 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/CTF-Blogs/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://phantomindamachine.github.io/CTF-Blogs/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Try Hack Me</title>
-      <link>http://localhost:1313/CTF-Blogs/tags/try-hack-me/</link>
+      <link>https://phantomindamachine.github.io/CTF-Blogs/tags/try-hack-me/</link>
       <pubDate>Mon, 03 Mar 2025 17:31:27 -0500</pubDate>
-      <guid>http://localhost:1313/CTF-Blogs/tags/try-hack-me/</guid>
+      <guid>https://phantomindamachine.github.io/CTF-Blogs/tags/try-hack-me/</guid>
       <description></description>
     </item>
   </channel>
