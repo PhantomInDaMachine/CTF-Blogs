@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Try Hack Me on </title>
+    <link>https://phantomindamachine.github.io/CTF-Blogs/tags/try-hack-me/</link>
+    <description>Recent content in Try Hack Me on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Mar 2025 17:31:27 -0500</lastBuildDate>
+    <atom:link href="https://phantomindamachine.github.io/CTF-Blogs/tags/try-hack-me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://phantomindamachine.github.io/CTF-Blogs/</link>
+      <pubDate>Mon, 03 Mar 2025 17:31:27 -0500</pubDate>
+      <guid>https://phantomindamachine.github.io/CTF-Blogs/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
