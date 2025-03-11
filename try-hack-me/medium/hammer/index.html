@@ -326,8 +326,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 <p><em><strong>Acknowledgment</strong></em>: Shout out to <code>hexguy</code> whom writeup helped me solve this box. His writeup seems to be down when last I checked.</p>
 <h2 id="add-target-ip-to-etchosts-file">Add target IP to <code>/etc/hosts</code> file</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo vim /etc/hosts
-</span></span></code></pre></div><p><img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer.png" alt="Image">
-<img src="/images/try-hack-me/medium/hammer/Hammer.png" alt="Image"></p>
+</span></span></code></pre></div><p><img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer.png" alt="Image"></p>
 <hr>
 <h2 id="1-reconnaissance">1. Reconnaissance</h2>
 <p>It says the first flag is behind a dashboard login.
@@ -354,7 +353,7 @@ Lets start with <code>nmap</code>.</p>
 <li><code>-o</code> outputs the standard out to a file</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap --top-ports <span style="color:#ae81ff">20</span> hammer.thm -o nMap/hammer_top20_ports.txt
-</span></span></code></pre></div><p><img src="https:/phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-1.png" alt="Image"></p>
+</span></span></code></pre></div><p><img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-1.png" alt="Image"></p>
 <p>Port 22 is open but no web-server.</p>
 <h3 id="scan-a-larger-range">Scan a larger range.</h3>
 <ul>
@@ -364,7 +363,7 @@ Lets start with <code>nmap</code>.</p>
 <li><code>-oN</code> to output scan in normal</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -sV -O -p 0-2000 hammer.thm -oN nMap/hammer_p0-2000_sV_O.txt
-</span></span></code></pre></div><p><img src="https:/phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-2.png" alt="Image"></p>
+</span></span></code></pre></div><p><img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-2.png" alt="Image"></p>
 <p>Now we get an Apache server running on port 1337.</p>
 <h3 id="rescan">Rescan</h3>
 <p>Going a bit deeper on our 2 open ports</p>
@@ -372,7 +371,7 @@ Lets start with <code>nmap</code>.</p>
 <li><code>-A</code> Enables OS and version detection, script scanning, and traceroute.</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -A -p 22,1337 hammer.thm -oN nMap/hammer_A_p22_1337.txt
-</span></span></code></pre></div><p><img src="https:/phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-3.png" alt="Image"></p>
+</span></span></code></pre></div><p><img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-3.png" alt="Image"></p>
 <p>Here we find:</p>
 <ul>
 <li>PHP is running because the <code>PHPSESSID</code> cookie is set.</li>
@@ -473,8 +472,8 @@ Lets start with <code>nmap</code>.</p>
 <li>here we get a sharp drop in <code>Content-Length</code> on the response</li>
 <li>from 1754 bytes to 44 bytes after 10 requests</li>
 </ul>
-<p><img src="https:/phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-6.png" alt="Image"></p>
-<p><img src="https:/phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-7.png" alt="Image"></p>
+<p><img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-6.png" alt="Image"></p>
+<p><img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-7.png" alt="Image"></p>
 <ul>
 <li>Adding verbose to the curl command reveals the issue.</li>
 <li>we are being throttled</li>
@@ -482,7 +481,7 @@ Lets start with <code>nmap</code>.</p>
 </ul>
 <h3 id="checking-http-responses">Checking HTTP Responses</h3>
 <p>Checking the website source code, we find a Dev Note:
-<img src="https:/phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-8.png" alt="Image"></p>
+<img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-8.png" alt="Image"></p>
 <ul>
 <li>keeping this in the back of mind for now</li>
 </ul>
@@ -498,20 +497,20 @@ For this we be using <code>ffuf</code></p>
 <li><code>-t 400</code> - number of concurrent threads</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ffuf -u http://hammer.thm:1337/FUZZ -w /usr/.../directory-list-2.3-medium.txt -e .php -c -ic -t <span style="color:#ae81ff">400</span>
-</span></span></code></pre></div><p><img src="https:/phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-9.png" alt="Image"></p>
+</span></span></code></pre></div><p><img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-9.png" alt="Image"></p>
 <p>And now to try scanning <code>hmr_&lt;DIRECTORY_NAME&gt;</code> that was found in the source code</p>
 <ul>
 <li>simply prepend <code>hmr_</code> to the <code>FUZZ</code></li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ffuf -u http://hammer.thm:1337/hmr_FUZZ -w /usr/.../directory-list-2.3-medium.txt -e .php -c -ic -t <span style="color:#ae81ff">400</span>
-</span></span></code></pre></div><p><img src="https:/phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-10.png" alt="Image"></p>
+</span></span></code></pre></div><p><img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-10.png" alt="Image"></p>
 <p>Looking through the <code>/hmr_logs</code> reveals a user</p>
 <ul>
 <li><code>tester@hammer.thm</code></li>
 </ul>
-<p><img src="https:/phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-11.png" alt="Image"></p>
+<p><img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-11.png" alt="Image"></p>
 <p>Trying the user name on <code>/reset_password.php</code> to check if responses have changed</p>
-<p><img src="https:/phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-12.png" alt="Image"></p>
+<p><img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-12.png" alt="Image"></p>
 <ul>
 <li>we get a prompt to enter a recovery code</li>
 <li>4-Digit Code</li>
@@ -524,7 +523,7 @@ For this we be using <code>ffuf</code></p>
 </li>
 <li>
 <p><strong>intercept</strong> request and send to <strong>repeater</strong>
-<img src="https:/phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-14.png" alt="Image"></p>
+<img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-14.png" alt="Image"></p>
 <ul>
 <li>the timeout is handled via JavaScript</li>
 <li>the timeout can be modified by sending a different value for <code>s</code></li>
@@ -558,9 +557,9 @@ Rate-Limiting works either one one, or combination of the following:</p>
 <ul>
 <li>Changing the IP-Address in the Header gives another 10 request before it kicks in again.</li>
 <li>In fact, any value, even an improperly formatted IPV4 address also worked.
-<img src="https:/phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-15.png" alt="Image"></li>
+<img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-15.png" alt="Image"></li>
 </ul>
-<p><img src="https:/phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-17.png" alt="Image"></p>
+<p><img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-17.png" alt="Image"></p>
 <h4 id="brute-forcing-the-mfa">Brute-Forcing the MFA</h4>
 <p>So far, the steps are as follows:</p>
 <ol>
@@ -591,23 +590,23 @@ Rate-Limiting works either one one, or combination of the following:</p>
 <p>Replace <code>&lt;CHANGE_ME&gt;</code> with the current <code>PHPSESSID</code></p>
 </li>
 </ul>
-<p><img src="https:/phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-18.png" alt="Image"></p>
-<p><img src="https:/phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-20.png" alt="Image"></p>
+<p><img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-18.png" alt="Image"></p>
+<p><img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-20.png" alt="Image"></p>
 <ul>
 <li>Notice no MFA Token.</li>
 <li>Guessing the payload structure would have also bypassed the 4-digit MFA code</li>
 </ul>
 <p>Logging in gives us our first flag.</p>
-<p><img src="https:/phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-21.png" alt="Image"></p>
+<p><img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-21.png" alt="Image"></p>
 <p>The site is logging us out every 20 seconds.</p>
-<p><img src="https:/phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-22.png" alt="Image"></p>
+<p><img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-22.png" alt="Image"></p>
 <ul>
 <li>Changing the expiration date to something further in the future will prevent this
-<img src="https:/phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-24.png" alt="Image"></li>
+<img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-24.png" alt="Image"></li>
 </ul>
 <h3 id="remote-code-execution">Remote Code Execution</h3>
 <p>In the dashboard we see some sort of system command form field.
-<img src="https:/phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-23.png" alt="Image"></p>
+<img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-23.png" alt="Image"></p>
 <ul>
 <li>most Linux commands are blocked</li>
 <li>we are logged in with the <code>user</code> role</li>
@@ -668,7 +667,7 @@ Rate-Limiting works either one one, or combination of the following:</p>
 <p>With that we can now run Linux commands</p>
 <h3 id="getting-a-shell">Getting a Shell</h3>
 <p>For this we will use the website <em><strong>revshells.com</strong></em> to help craft a payload:</p>
-<p><img src="https:/phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-30.png" alt="Image"></p>
+<p><img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-30.png" alt="Image"></p>
 <p>Lets set up our listener with <code>netcat</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nc -lvnp <span style="color:#ae81ff">9999</span>
 </span></span></code></pre></div><p>We know the server is running PHP.
@@ -678,8 +677,8 @@ So we can use the following command via the HTTP POST requests because we can no
 </span></span></code></pre></div><hr>
 <p><em><strong>Note</strong></em>: When sending commands like this through an API interface, make sure to escape the double quotes<code>&quot;&quot;</code>, as JSON uses double quotes to define keys and values. Wrongly formatted commands will produce errors.</p>
 <hr>
-<p><img src="https:/phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-27.png" alt="Image"></p>
-<p><img src="https:/phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-29.png" alt="Image"></p>
+<p><img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-27.png" alt="Image"></p>
+<p><img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer-29.png" alt="Image"></p>
 <p>As we can see, we get the reverse shell.
 We then navigate to <code>/home/ubuntu/</code> and <code>cat</code> the file <code>flag.txt</code>.</p>
 
