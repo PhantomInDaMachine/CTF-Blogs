@@ -307,6 +307,99 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
                 <div class="posts">
     
     
+    <article class="post">
+        <div class="info">
+  <h1 class="post-title">
+    <a href="https://phantomindamachine.github.io/CTF-Blogs/try-hack-me/easy/test/">Test</a>
+  </h1>
+
+  <div class="headline">
+    <div>
+      
+      
+      <time datetime=" 2025-03-03T18:07:01-0500" class="post-date">
+        March 3, 2025
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>0 min read</span>
+      </span>
+    </div>
+
+    
+  </div>
+
+  
+  
+
+  
+</div>
+
+        
+        
+        
+        
+    </article>
+    <article class="post">
+        <div class="info">
+  <h1 class="post-title">
+    <a href="https://phantomindamachine.github.io/CTF-Blogs/try-hack-me/medium/hammer/">Hammer</a>
+  </h1>
+
+  <div class="headline">
+    <div>
+      
+      
+      <time datetime=" 2025-03-03T16:52:42-0500" class="post-date">
+        March 3, 2025
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>8 mins read</span>
+      </span>
+    </div>
+
+    
+  </div>
+
+  
+  
+
+  
+</div>
+
+        
+        <hr>
+<h1 id="tryhackme-hammer-ctf-challenge">TryHackMe: Hammer CTF Challenge</h1>
+<p><em><strong>Acknowledgment</strong></em>: Shout out to <code>hexguy</code> whom writeup helped me solve this box. His writeup seems to be down when last I checked.</p>
+<h2 id="add-target-ip-to-etchosts-file">Add target IP to <code>/etc/hosts</code> file</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo vim /etc/hosts
+</span></span></code></pre></div><p><img src="https://phantomindamachine.github.io/CTF-Blogs/images/try-hack-me/medium/hammer/Hammer.png" alt="Image"></p>
+<hr>
+<h2 id="1-reconnaissance">1. Reconnaissance</h2>
+<p>It says the first flag is behind a dashboard login.
+Navigating to <code>http://hammer.thm/</code> shows an <code>ERR_CONNECTION_REFUSED</code>.
+Maybe we have the wrong port.
+Lets start with <code>nmap</code>.</p>
+<hr>
+<p><em><strong>Note</strong></em>: As a friendly reminder, <code>-sV</code> excludes port 9100, which is often the default port for printers.</p>
+        
+        <div class="read-more-link">
+            <a href="/CTF-Blogs/try-hack-me/medium/hammer/">Read More…</a>
+        </div>
+        
+        
+    </article>
 </div>
 
 
