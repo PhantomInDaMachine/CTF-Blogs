@@ -6,8 +6,22 @@
     <description>Recent content on </description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Mar 2025 18:07:01 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 05 Mar 2025 21:34:54 -0500</lastBuildDate>
     <atom:link href="https://phantomindamachine.github.io/CTF-Blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>_Default</title>
+      <link>https://phantomindamachine.github.io/CTF-Blogs/layouts/_default/</link>
+      <pubDate>Wed, 05 Mar 2025 21:34:54 -0500</pubDate>
+      <guid>https://phantomindamachine.github.io/CTF-Blogs/layouts/_default/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Default</title>
+      <link>https://phantomindamachine.github.io/CTF-Blogs/layouts/default/</link>
+      <pubDate>Wed, 05 Mar 2025 21:31:07 -0500</pubDate>
+      <guid>https://phantomindamachine.github.io/CTF-Blogs/layouts/default/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Test</title>
       <link>https://phantomindamachine.github.io/CTF-Blogs/try-hack-me/easy/test/</link>

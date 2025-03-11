@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://phantomindamachine.github.io/CTF-Blogs/layouts/_default/</loc>
+    <lastmod>2025-03-05T21:34:54-05:00</lastmod>
+  </url><url>
+    <loc>https://phantomindamachine.github.io/CTF-Blogs/layouts/</loc>
+    <lastmod>2025-03-05T21:34:54-05:00</lastmod>
+  </url><url>
+    <loc>https://phantomindamachine.github.io/CTF-Blogs/layouts/default/</loc>
+    <lastmod>2025-03-05T21:31:07-05:00</lastmod>
+  </url><url>
     <loc>https://phantomindamachine.github.io/CTF-Blogs/try-hack-me/hard/</loc>
     <lastmod>2025-03-03T21:06:15-05:00</lastmod>
   </url><url>
